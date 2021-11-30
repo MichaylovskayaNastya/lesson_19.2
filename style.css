@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 500px 200px;
+    grid-template-areas: 
+    "header header header header"
+    "nav articles articles main"
+    "footer footer footer footer";
+    border: 1px solid #fff;
+}
+.header {
+    grid-area: header;
+    border: 3px solid #fff;
+}
+.nav {
+    grid-area: nav;
+    border: 3px solid #fff;
+}
+.articles {
+    grid-area: articles;
+    border: 3px solid #fff;
+}
+.main {
+    grid-area: main;
+    border: 3px solid #fff;
+}
+.footer {
+    grid-area: footer;
+    border: 3px solid #fff;
+}
+p {
+    text-align: center;
+}
